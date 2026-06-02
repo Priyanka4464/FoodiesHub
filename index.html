@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Introduction</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:linear-gradient(to right,#74ebd5,#ACB6E5);
+            font-family:Arial,sans-serif;
+            color:#333;
+            line-height:1.7;
+            padding:20px;
+        }
+
+        header{
+            background-color:white;
+            padding:20px;
+            border-radius:10px;
+            text-align:center;
+            margin-bottom:20px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        header h1{
+            color:darkblue;
+            margin-bottom:10px;
+        }
+
+        nav a{
+            text-decoration:none;
+            margin:10px;
+            color:darkred;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:blue;
+        }
+
+        .container{
+            background-color:white;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            color:darkgreen;
+            margin-top:20px;
+            margin-bottom:10px;
+            border-left:5px solid green;
+            padding-left:10px;
+        }
+
+        p{
+            margin-bottom:15px;
+        }
+
+        ul{
+            margin-left:30px;
+            margin-bottom:20px;
+        }
+
+        li{
+            margin-bottom:8px;
+        }
+
+        pre{
+            background-color:#222;
+            color:white;
+            padding:15px;
+            border-radius:8px;
+            overflow-x:auto;
+            margin-bottom:20px;
+        }
+
+        .card{
+            background-color:#f9f9f9;
+            padding:20px;
+            border-radius:10px;
+            margin-top:20px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.02);
+            box-shadow:0 0 15px rgba(0,0,0,0.3);
+        }
+
+        footer{
+            text-align:center;
+            margin-top:30px;
+            color:white;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>CSS - Cascading Style Sheets</h1>
+
+        <nav>
+            <a href="#syntax">Syntax</a>
+            <a href="#selectors">Selectors</a>
+            <a href="#properties">Properties</a>
+            <a href="#conclusion">Conclusion</a>
+        </nav>
+
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+
+            <p>
+                CSS is a stylesheet language used to describe the presentation of a document written in HTML.
+                It helps to design beautiful web pages using colors, fonts, spacing, layouts and animations.
+            </p>
+
+        </div>
+
+
+        <div class="card" id="syntax">
+
+            <h2>CSS Syntax</h2>
+
+            <p>
+                CSS rules are written using selectors and declaration blocks.
+            </p>
+
+<pre>
+selector{
+    property:value;
+}
+</pre>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Example CSS</h2>
+
+<pre>
+body{
+    background-color:lightblue;
+}
+
+p{
+    color:darkblue;
+    font-size:18px;
+}
+</pre>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Applying CSS</h2>
+
+            <ul>
+                <li>Inline CSS</li>
+                <li>Internal CSS</li>
+                <li>External CSS</li>
+            </ul>
+
+        </div>
+
+
+        <div class="card" id="selectors">
+
+            <h2>CSS Selectors</h2>
+
+            <ul>
+                <li>Element Selector</li>
+                <li>Class Selector</li>
+                <li>ID Selector</li>
+                <li>Attribute Selector</li>
+            </ul>
+
+        </div>
+
+
+        <div class="card" id="properties">
+
+            <h2>CSS Properties</h2>
+
+            <ul>
+                <li>color</li>
+                <li>background-color</li>
+                <li>font-size</li>
+                <li>margin</li>
+                <li>padding</li>
+                <li>border</li>
+            </ul>
+
+        </div>
+
+
+        <div class="card" id="conclusion">
+
+            <h2>Conclusion</h2>
+
+            <p>
+                CSS is very important for creating attractive and responsive websites.
+                It improves user experience and makes websites look professional.
+            </p>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p>© 2026 CSS Learning Project</p>
+
+    </footer>
+
+</body>
+
+</html>
